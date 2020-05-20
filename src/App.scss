@@ -1,0 +1,55 @@
+.App {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .timer {
+    margin: auto;
+
+    &__numbers {
+      width: 10px;
+      margin: 0 5px;
+      font-size: 40px;
+      letter-spacing: 2px;
+    }
+
+    &__btn-wrapper {
+      margin-top: 50px;
+      transition: 0.125s all;
+
+      .btn-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .btn {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 50px;
+        background-color: rgb(86, 38, 197);
+        border: none;
+        color: #ffffff;
+        outline: none;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: 0.125s all;
+
+        &:active {
+          transform: translate3d(2px, 2px, 0);
+        }
+      }
+
+      .btn-stop {
+        background-color: rgb(245, 63, 63);
+      }
+
+      .btn-reset {
+        background-color: rgb(44, 43, 43);
+      }
+    }
+  }
+}
